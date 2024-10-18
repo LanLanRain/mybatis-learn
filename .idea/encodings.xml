@@ -9,5 +9,7 @@
     <file url="file://$PROJECT_DIR$/003-mybatis-antic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/004-mybatis-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/004-mybatis-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/005-mybatis-param/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/005-mybatis-param/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lb.mybatis.mapper.StudentMapper">
+   <!-- <select id="selectByName" resultType="student">
+        select * from t_student where name = #{name}
+    </select>-->
+
+    <!--如果参数只有一个的话，#{} 里面的内容就随便写了。对于 ${} 来说，注意加单引号。-->
+
+    <select id="selectByName" resultType="student" parameterType="java.lang.String">
+        select * from t_student where name = #{name, javaType=String, jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectById" resultType="student">
+        select * from t_student where id = #{id}
+    </select>
+
+    <select id="selectByBirth" resultType="student">
+        select * from t_student where birthday = #{birth}
+    </select>
+
+    <select id="selectBySex" resultType="student">
+        select * from t_student where sex = #{sex}
+    </select>
+
+    <!--这种方式是手动封装Map集合，将每个条件以key和value的形式存放到集合中。然后在使用的时候通过#{map集合的key}来取值。-->
+    <select id="selectByParamMap" resultType="student">
+        select * from t_student where name = #{arg0} and sex = #{arg1}
+    </select>
+
+    <!--这里需要注意的是：#{} 里面写的是属性名字。这个属性名其本质上是：set/get方法名去掉set/get之后的名字。-->
+    <insert id="insert">
+        insert into t_student values(null,#{name},#{age},#{height},#{birth},#{sex})
+    </insert>
+
+    <!--select * from t_student where name = #{nameKey} and age = #{ageKey}-->
+    <!--select * from t_student where name = #{name} and sex = #{sex}-->
+    <!--实际上在mybatis底层会创建一个map集合，以arg0/param1为key，以方法上的参数为value-->
+    <select id="selectByNameAndSex" resultType="student">
+        <!--select * from t_student where name = #{arg0} and sex = #{arg1}-->
+        <!--select * from t_student where name = #{param1} and sex = #{param2}-->
+        select * from t_student where name = #{arg0} and sex = #{param2}
+    </select>
+
+    <select id="selectByNameAndAge" resultType="student">
+        select * from t_student where name = #{name} and age = #{age}
+    </select>
+</mapper>
