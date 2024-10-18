@@ -1,0 +1,134 @@
+2024-10-18 21:16:20.040 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:16:20.052 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:16:20.052 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:16:20.052 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:16:20.052 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:38.251 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:17:38.262 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:38.262 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:38.262 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:38.263 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:38.321 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:17:38.549 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1406206626.
+2024-10-18 21:17:38.549 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@53d102a2]
+2024-10-18 21:17:38.553 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByName - ==>  Preparing: select * from t_student where name = ?
+2024-10-18 21:17:38.583 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByName - ==> Parameters: 张三(String)
+2024-10-18 21:17:38.605 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByName - <==      Total: 1
+2024-10-18 21:17:53.296 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:17:53.307 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:53.308 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:53.308 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:53.308 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:53.363 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:17:53.606 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1520267010.
+2024-10-18 21:17:53.606 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5a9d6f02]
+2024-10-18 21:17:53.610 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectById - ==>  Preparing: select * from t_student where id = ?
+2024-10-18 21:17:53.638 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectById - ==> Parameters: 2(Long)
+2024-10-18 21:17:53.665 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectById - <==      Total: 1
+2024-10-18 21:17:57.959 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:17:57.971 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:57.971 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:57.971 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:57.971 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:17:58.032 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:17:58.270 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1495608502.
+2024-10-18 21:17:58.270 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@59252cb6]
+2024-10-18 21:17:58.273 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectBySex - ==>  Preparing: select * from t_student where sex = ?
+2024-10-18 21:17:58.293 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectBySex - ==> Parameters: 男(String)
+2024-10-18 21:17:58.312 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectBySex - <==      Total: 2
+2024-10-18 21:18:02.063 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:18:02.073 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:02.073 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:02.073 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:02.073 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:02.128 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:18:02.364 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1603696865.
+2024-10-18 21:18:02.364 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5f9678e1]
+2024-10-18 21:18:02.367 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByBirth - ==>  Preparing: select * from t_student where birth = ?
+2024-10-18 21:18:02.393 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByBirth - ==> Parameters: 2022-08-16 00:00:00.0(Timestamp)
+2024-10-18 21:18:44.072 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:18:44.082 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:44.082 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:44.082 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:44.082 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:18:44.138 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:18:44.374 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 843299092.
+2024-10-18 21:18:44.374 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3243b914]
+2024-10-18 21:18:44.378 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByBirth - ==>  Preparing: select * from t_student where birthday = ?
+2024-10-18 21:18:44.408 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByBirth - ==> Parameters: 2022-08-16 00:00:00.0(Timestamp)
+2024-10-18 21:18:44.440 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.selectByBirth - <==      Total: 0
+2024-10-18 21:19:34.876 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:19:34.887 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:19:34.887 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:19:34.887 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:19:34.887 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:19:34.941 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:19:35.177 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 605982374.
+2024-10-18 21:19:35.177 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@241e8ea6]
+2024-10-18 21:19:35.180 [main] DEBUG c.lb.mybatis.mapper.StudentMapper.selectByParamMap - ==>  Preparing: select * from t_student where name = ? and age = ?
+2024-10-18 21:19:35.209 [main] DEBUG c.lb.mybatis.mapper.StudentMapper.selectByParamMap - ==> Parameters: 张三(String), 20(Integer)
+2024-10-18 21:19:35.233 [main] DEBUG c.lb.mybatis.mapper.StudentMapper.selectByParamMap - <==      Total: 0
+2024-10-18 21:21:01.176 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:21:01.186 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:01.186 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:01.186 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:01.186 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:01.242 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:21:01.481 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1443967876.
+2024-10-18 21:21:01.481 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@56113384]
+2024-10-18 21:21:01.483 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.insert - ==>  Preparing: insert into t_student values(null,?,?,?,?,?)
+2024-10-18 21:21:26.928 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:21:26.941 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:26.941 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:26.941 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:26.941 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:21:26.993 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:21:27.219 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1443967876.
+2024-10-18 21:21:27.219 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@56113384]
+2024-10-18 21:21:27.222 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.insert - ==>  Preparing: insert into t_student values(null,?,?,?,?,?)
+2024-10-18 21:21:27.251 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.insert - ==> Parameters: 李四(String), 30(Integer), 1.7(Double), 2024-10-18 21:21:26.989(Timestamp), 男(String)
+2024-10-18 21:21:27.262 [main] DEBUG com.lb.mybatis.mapper.StudentMapper.insert - <==    Updates: 1
+2024-10-18 21:21:27.263 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@56113384]
+2024-10-18 21:23:27.566 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:23:27.579 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:23:27.579 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:23:27.579 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:23:27.579 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:24:43.664 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:24:43.672 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:24:43.672 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:24:43.672 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:24:43.672 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:25:28.841 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:25:28.854 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:25:28.854 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:25:28.854 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:25:28.855 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:25:28.910 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:25:29.158 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 1003206025.
+2024-10-18 21:25:29.159 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3bcbb589]
+2024-10-18 21:25:29.162 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndSex - ==>  Preparing: select * from t_student where name = ? and sex = ?
+2024-10-18 21:25:29.192 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndSex - ==> Parameters: 张三(String), 女(String)
+2024-10-18 21:25:29.210 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndSex - <==      Total: 0
+2024-10-18 21:26:30.816 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:26:30.828 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:26:30.828 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:26:30.828 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:26:30.828 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:26:30.886 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:26:31.142 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 256346753.
+2024-10-18 21:26:31.142 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@f478a81]
+2024-10-18 21:26:31.144 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndSex - ==>  Preparing: select * from t_student where name = ? and sex = ?
+2024-10-18 21:26:31.170 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndSex - ==> Parameters: 张三(String), 女(String)
+2024-10-18 21:26:31.192 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndSex - <==      Total: 0
+2024-10-18 21:27:37.912 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-18 21:27:37.923 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:27:37.923 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:27:37.923 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:27:37.923 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-18 21:27:37.979 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-18 21:27:38.204 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 806813022.
+2024-10-18 21:27:38.204 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3016fd5e]
+2024-10-18 21:27:38.207 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndAge - ==>  Preparing: select * from t_student where name = ? and age = ?
+2024-10-18 21:27:38.231 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndAge - ==> Parameters: 张三(String), 20(Integer)
+2024-10-18 21:27:38.248 [main] DEBUG c.l.m.mapper.StudentMapper.selectByNameAndAge - <==      Total: 0
