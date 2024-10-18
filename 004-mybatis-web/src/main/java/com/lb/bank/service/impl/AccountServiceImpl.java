@@ -6,11 +6,14 @@ import com.lb.bank.exception.AppException;
 import com.lb.bank.exception.MoneyNotEnoughException;
 import com.lb.bank.pojo.Account;
 import com.lb.bank.service.AccountService;
+import com.lb.bank.util.GenerateDaoByJavassist;
+import com.lb.bank.util.SqlSessionUtil;
 
 public class AccountServiceImpl implements AccountService {
 
-    private AccountDao accountDao = new AccountDaoImpl();
+    // private AccountDao accountDao = new AccountDaoImpl();
 
+    private AccountDao accountDao = (AccountDao) GenerateDaoByJavassist.getMapper(SqlSessionUtil.openSession(), AccountDao.class);
     /**
      * 实现转账功能
      *
