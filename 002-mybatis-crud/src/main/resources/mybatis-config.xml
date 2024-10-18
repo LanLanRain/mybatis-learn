@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- MyBatis 配置文件 -->
+<configuration>
+
+    <!-- 配置日志 -->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <!-- 配置环境，默认环境为 development -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 配置事务管理器，使用 JDBC 事务管理器 -->
+            <transactionManager type="JDBC"/>
+            <!-- 配置数据源，使用连接池 POOLED -->
+            <dataSource type="POOLED">
+                <!-- 配置数据库驱动 -->
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <!-- 配置数据库连接 URL -->
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis_learn"/>
+                <!-- 配置数据库用户名 -->
+                <property name="username" value="root"/>
+                <!-- 配置数据库密码 -->
+                <property name="password" value="mysql_1120"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 配置映射器，这里需要配置 SQL 映射文件的路径 -->
+    <mappers>
+        <!--sql映射文件创建好之后，需要将该文件路径配置到这里-->
+        <mapper resource="CarMapper.xml"/>
+        <mapper resource="CarMapper2.xml"/>
+    </mappers>
+
+
+</configuration>
