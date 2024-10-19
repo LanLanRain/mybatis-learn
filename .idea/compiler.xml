@@ -13,6 +13,7 @@
         <module name="001-mybatis-intro" />
         <module name="004-mybatis-web" />
         <module name="007-mybatis-dynamic-sql" />
+        <module name="010-mybatis-page" />
         <module name="002-mybatis-crud" />
         <module name="003-mybatis-antic" />
       </profile>
