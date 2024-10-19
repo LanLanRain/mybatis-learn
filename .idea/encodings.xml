@@ -13,5 +13,7 @@
     <file url="file://$PROJECT_DIR$/005-mybatis-param/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/006-mybatis-select/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/006-mybatis-select/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/007-mybatis-dynamic-sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/007-mybatis-dynamic-sql/src/main/resources" charset="UTF-8" />
   </component>
 </project>

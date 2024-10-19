@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="002-mybatis-crud" />
         <module name="005-mybatis-param" />
-        <module name="003-mybatis-antic" />
         <module name="006-mybatis-select" />
         <module name="001-mybatis-intro" />
         <module name="004-mybatis-web" />
+        <module name="007-mybatis-dynamic-sql" />
+        <module name="002-mybatis-crud" />
+        <module name="003-mybatis-antic" />
       </profile>
     </annotationProcessing>
   </component>
