@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lb.mybatis.mapper.CarMapper">
+    <select id="selectById" resultType="Car">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+        where id = #{id}
+    </select>
+
+    <select id="selectByIdToList" resultType="Car">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+        where id = #{id}
+    </select>
+
+    <select id="selectAll" resultType="Car">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+    </select>
+
+    <select id="selectAll2" resultType="Car">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+    </select>
+
+    <select id="selectByIdRetMap" resultType="map">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+        where id = #{id}
+    </select>
+    <select id="selectAllRetListMap" resultType="map">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+    </select>
+
+    <select id="selectAllRetMap" resultType="map">
+        select id, car_num carNum, brand, guide_price guidePrice, produce_time produceTime, car_type carType
+        from t_car
+    </select>
+
+    <!--
+        resultMap:
+            id：这个结果映射的标识，作为select标签的resultMap属性的值。
+            type：结果集要映射的类。可以使用别名。
+-->
+    <resultMap id="carResultMap" type="car">
+        <!--对象的唯一标识，官方解释是：为了提高mybatis的性能。建议写上。-->
+        <id property="id" column="id"/>
+        <result property="carNum" column="car_num"/>
+        <!--当属性名和数据库列名一致时，可以省略。但建议都写上。-->
+        <!--javaType用来指定属性类型。jdbcType用来指定列类型。一般可以省略。-->
+        <result property="brand" column="brand" javaType="string" jdbcType="VARCHAR"/>
+        <result property="guidePrice" column="guide_price"/>
+        <result property="produceTime" column="produce_time"/>
+        <result property="carType" column="car_type"/>
+    </resultMap>
+
+    <!--resultMap属性的值必须和resultMap标签中id属性值一致。-->
+    <select id="selectAllByResultMap" resultMap="carResultMap">
+        select *
+        from t_car
+    </select>
+
+    <select id="selectAllByMapUnderscoreToCamelCase" resultType="Car">
+        select * from t_car
+    </select>
+
+    <!--long是别名，可参考mybatis开发手册。-->
+    <select id="selectTotal" resultType="long">
+        select count(*) from t_car
+    </select>
+</mapper>
