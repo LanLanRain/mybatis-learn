@@ -103,4 +103,36 @@
             id = #{id}
         </foreach>
     </delete>
+
+    <insert id="insertBatchByForeach">
+        insert into t_car values
+        <foreach collection="cars" item="car" separator=",">
+            (null,#{car.carNum},#{car.brand},#{car.guidePrice},#{car.produceTime},#{car.carType})
+        </foreach>
+
+    </insert>
+
+
+    <!--sql标签用来声明sql片段
+    include标签用来将声明的sql片段包含到某个sql语句当中
+    作用：代码复用。易维护。-->
+    <sql id="carCols">id,car_num carNum,brand,guide_price guidePrice,produce_time produceTime,car_type carType</sql>
+
+    <select id="selectAllRetMap" resultType="map">
+        select
+        <include refid="carCols"/>
+        from t_car
+    </select>
+
+    <select id="selectAllRetListMap" resultType="map">
+        select
+        <include refid="carCols"/>
+        carType from t_car
+    </select>
+
+    <select id="selectByIdRetMap" resultType="map">
+        select
+        <include refid="carCols"/>
+        from t_car where id = #{id}
+    </select>
 </mapper>

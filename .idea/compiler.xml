@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="005-mybatis-param" />
+        <module name="008-mybatis-advanced-mapping" />
         <module name="006-mybatis-select" />
         <module name="001-mybatis-intro" />
         <module name="004-mybatis-web" />

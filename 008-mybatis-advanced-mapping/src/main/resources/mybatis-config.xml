@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="jdbc.properties"/>
+
+    <!--放在properties标签后面-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--开启延迟加载-->
+<!--        开启全局延迟加载之后，所有的sql都会支持延迟加载，如果某个sql你不希望它支持延迟加载怎么办呢？将fetchType设置为eager：-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.lb.mybatis.pojo.Student" alias="student"/>
+        <typeAlias type="com.lb.mybatis.pojo.Clazz" alias="clazz"/>
+    </typeAliases>
+
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--一定要注意这里的路径哦！！！-->
+        <mapper resource="CarMapper.xml"/>
+    </mappers>
+
+
+</configuration>

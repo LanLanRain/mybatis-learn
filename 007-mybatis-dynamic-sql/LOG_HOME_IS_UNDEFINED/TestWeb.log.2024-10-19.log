@@ -121,3 +121,15 @@
 2024-10-19 13:25:11.286 [main] DEBUG c.l.mybatis.mapper.CarMapper.deleteBatchByForeach2 - ==> Parameters: 40(Long), 41(Long), 42(Long)
 2024-10-19 13:25:11.288 [main] DEBUG c.l.mybatis.mapper.CarMapper.deleteBatchByForeach2 - <==    Updates: 0
 2024-10-19 13:25:11.291 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@42e3ede4]
+2024-10-19 13:34:22.220 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-10-19 13:34:22.227 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-19 13:34:22.228 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-19 13:34:22.228 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-19 13:34:22.228 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2024-10-19 13:34:22.304 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+2024-10-19 13:34:22.520 [main] DEBUG o.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 2036775591.
+2024-10-19 13:34:22.520 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7966baa7]
+2024-10-19 13:34:22.522 [main] DEBUG c.lb.mybatis.mapper.CarMapper.insertBatchByForeach - ==>  Preparing: insert into t_car values (null,?,?,?,?,?) , (null,?,?,?,?,?) , (null,?,?,?,?,?)
+2024-10-19 13:34:22.542 [main] DEBUG c.lb.mybatis.mapper.CarMapper.insertBatchByForeach - ==> Parameters: 2001(String), 兰博基尼(String), 100.0(Double), 1998-10-11(String), 燃油车(String), 2001(String), 兰博基尼(String), 100.0(Double), 1998-10-11(String), 燃油车(String), 2001(String), 兰博基尼(String), 100.0(Double), 1998-10-11(String), 燃油车(String)
+2024-10-19 13:34:22.545 [main] DEBUG c.lb.mybatis.mapper.CarMapper.insertBatchByForeach - <==    Updates: 3
+2024-10-19 13:34:22.545 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7966baa7]

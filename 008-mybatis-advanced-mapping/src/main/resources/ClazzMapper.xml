@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lb.mybatis.mapper.ClazzMapper">
+
+    <select id="selectByCid" resultType="Clazz">
+        select *
+        from t_clazz
+        where cid = #{cid}
+    </select>
+
+
+    <!--<resultMap id="clazzResultMap" type="Clazz">
+        <id property="cid" column="cid"/>
+        <result property="cname" column="cname"/>
+        <collection property="stus" ofType="Student">
+            <id property="sid" column="sid"/>
+            <result property="sname" column="sname"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectClazzAndStusByCid" resultMap="clazzResultMap">
+        select *
+        from t_clazz c
+                 join t_student s on c.cid = s.cid
+        where c.cid = #{cid}
+    </select>-->
+
+    <resultMap id="clazzResultMap" type="Clazz">
+        <id property="cid" column="cid"/>
+        <result property="cname" column="cname"/>
+        <!--主要看这里-->
+        <collection property="stus"
+                    select="com.lb.mybatis.mapper.StudentMapper.selectByCid"
+                    column="cid"/>
+    </resultMap>
+
+    <!--sql语句也变化了-->
+    <select id="selectClazzAndStusByCid" resultMap="clazzResultMap">
+        select *
+        from t_clazz c
+        where c.cid = #{cid}
+    </select>
+</mapper>
